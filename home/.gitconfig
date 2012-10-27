@@ -1,0 +1,11 @@
+[user]
+	name = Chris Prather
+	email = chris@prather.org
+[core]
+	editor = vim
+[color]
+	ui = auto
+[pack]
+	threads = 0
+[push]
+	default = current
