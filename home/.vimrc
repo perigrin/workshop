@@ -41,34 +41,3 @@ let perl_include_pod=1
 let perl_string_as_statement=1
 let perl_sync_dist=1000
 
-" FuzzyFinder {{{
-nmap <C-t> :FufFile<CR>
-nmap <C-f> :FufLine!<CR>
-let g:fuf_modesDisable = [
-            \'mrufile', 'mrucmd', 'bookmarkfile', 'bookmarkdir',
-            \'tag', 'buffertag', 'taggedfile', 'jumplist', 'changelist',
-            \'quickfix',
-\]
-let g:fuf_keyPrevPattern = '<Up>'
-let g:fuf_keyNextPattern = '<Down>'
-let g:fuf_dataDir = '~/.vim/fuf-data'
-let g:fuf_enumeratingLimit = 10
-" exclusions {{{
-function! s:set_excludes()
-    let fuf_coveragefile_exclude_base = '\('
-            \. '\(^\|/\)\.\|'
-            \. '\~$\|'
-            \. '^\(blib\|nytprof\)\|'
-            \. '\.\('
-                \. 'o\|exe\|dll\|bak\|orig\|swp\|bs\|'
-                \. 'png\|jpg\|gif\|pdf\|doc\|d\|vsprops\|pbxproj\|sln'
-            \. '\)$'
-        \. '\)'
-    let g:fuf_coveragefile_exclude = fuf_coveragefile_exclude_base
-    if filereadable("dist.ini")
-        let g:fuf_coveragefile_exclude .= '\|^' . fnamemodify('.', ':p:h:t') . '-'
-    endif
-endfunction
-autocmd BufReadPost * call <SID>set_excludes()
-" call <SID>set_excludes()
-" }}}
