@@ -1,0 +1,4 @@
+[ -f ~/.bash_alias  ] && source ~/.bash_aliases  
+[ -f ~/.bash_prompt ] && source ~/.bash_prompt   
+[ -f ~/.bash_ssh    ] && source ~/.bash_ssh      
+[ -f ~/.bash_tmux   ] && source ~/.bash_tmux

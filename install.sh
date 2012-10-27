@@ -7,3 +7,4 @@ git submodule init
 git submodule update
 cd -
 $HOME/.homeshick symlink workshop
+echo '[ -f $HOME/.workshoprc ] && source $HOME/.workshoprc' >> ~/.bashrc
