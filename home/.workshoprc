@@ -1,6 +1,16 @@
-[ -f ~/.bash_alias  ] && source ~/.bash_aliases  
-[ -f ~/.bash_prompt ] && source ~/.bash_prompt   
-[ -f ~/.bash_ssh    ] && source ~/.bash_ssh      
-[ -f ~/.bash_tmux   ] && source ~/.bash_tmux
 
-`which git` && $(cd $HOME/.homesick/repos/workshop; git pull)
+update_workshop() {
+        OLDWD=$PWD
+        cd $HOME/.homesick/repos/workshop;
+        git pull;
+        cd $HOME; 
+        $HOME/.homeshick symlink workshop;
+        cd $OLDWD;
+}
+
+update_workshop;
+
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+[ -f ~/.bash_prompt  ] && source ~/.bash_prompt
+[ -f ~/.bash_ssh     ] && source ~/.bash_ssh
+[ -f ~/.bash_tmux    ] && source ~/.bash_tmux
