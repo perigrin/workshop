@@ -1,0 +1,9 @@
+SSH_BIN=`which ssh`
+alias machine_list="cat ~/.ssh/config | egrep '^Host' | grep -v '\*' | cut -d ' ' -f 2"
+# Setup SSH aliases
+
+for MACHINE in `machine_list`
+do
+        alias $MACHINE="TERM=xterm-color $SSH_BIN $MACHINE"
+done
+

@@ -1,0 +1,3 @@
+{'word': '39|        $dir->store( session->{player} );', 'pattern': 'session'}
+{'word': '39|        $dir->store( session->{player} );', 'pattern': 'store'}
+{'word': '5|dance;', 'pattern': 'dance'}

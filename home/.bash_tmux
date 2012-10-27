@@ -1,0 +1,14 @@
+if [[ "$SSH_CLIENT" != "" ]]
+then 
+        if [[ "$TERM" != "screen-256color" ]]
+        then
+                tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+        fi
+fi
+
+update_ssh_agent() {
+        if [[ "$TMUX" ]]
+        then 
+                export SSH_AUTH_SOCK=$(tmux showenv | grep SSH_AUTH_SOCK | cut -d= -f2)
+        fi
+}
