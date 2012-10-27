@@ -1,4 +1,4 @@
-
+set -o vi
 update_workshop() {
         OLDWD=$PWD
         cd $HOME/.homesick/repos/workshop;
