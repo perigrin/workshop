@@ -1,45 +1,45 @@
-[submodule "vim/bundle/snipmate.vim"]
-	path = vim/bundle/snipmate.vim
+[submodule "home/.vim/bundle/snipmate.vim"]
+	path = home/.vim/bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
-[submodule "vim/bundle/vim-pathogen"]
-	path = vim/bundle/vim-pathogen
+[submodule "home/.vim/bundle/vim-pathogen"]
+	path = home/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
-[submodule "vim/bundle/YankRing.vim"]
-	path = vim/bundle/YankRing.vim
+[submodule "home/.vim/bundle/YankRing.vim"]
+	path = home/.vim/bundle/YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim.git
-[submodule "vim/bundle/supertab"]
-	path = vim/bundle/supertab
+[submodule "home/.vim/bundle/supertab"]
+	path = home/.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "vim/bundle/nerdcommenter"]
-	path = vim/bundle/nerdcommenter
+[submodule "home/.vim/bundle/nerdcommenter"]
+	path = home/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+[submodule "home/.vim/bundle/nerdtree"]
+	path = home/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/vim-perl"]
-	path = vim/bundle/vim-perl
+[submodule "home/.vim/bundle/vim-perl"]
+	path = home/.vim/bundle/vim-perl
 	url = https://github.com/petdance/vim-perl.git
-[submodule "vim/bundle/Color-Sampler-Pack"]
-	path = vim/bundle/Color-Sampler-Pack
+[submodule "home/.vim/bundle/Color-Sampler-Pack"]
+	path = home/.vim/bundle/Color-Sampler-Pack
 	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
-[submodule "vim/bundle/ScrollColors"]
-	path = vim/bundle/ScrollColors
+[submodule "home/.vim/bundle/ScrollColors"]
+	path = home/.vim/bundle/ScrollColors
 	url = https://github.com/vim-scripts/ScrollColors.git
-[submodule "vim/bundle/SunburstVIM"]
-	path = vim/bundle/SunburstVIM
+[submodule "home/.vim/bundle/SunburstVIM"]
+	path = home/.vim/bundle/SunburstVIM
 	url = https://github.com/tangphillip/SunburstVIM.git
-[submodule "vim/bundle/moose-syntax.vim"]
-	path = vim/bundle/moose-syntax.vim
+[submodule "home/.vim/bundle/moose-syntax.vim"]
+	path = home/.vim/bundle/moose-syntax.vim
 	url = https://github.com/c9s/moose-syntax.vim.git
-[submodule "vim/bundle/FuzzyFinder"]
-	path = vim/bundle/FuzzyFinder
+[submodule "home/.vim/bundle/FuzzyFinder"]
+	path = home/.vim/bundle/FuzzyFinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
-[submodule "vim/bundle/fuzzyfinder_textmate"]
-	path = vim/bundle/fuzzyfinder_textmate
+[submodule "home/.vim/bundle/fuzzyfinder_textmate"]
+	path = home/.vim/bundle/fuzzyfinder_textmate
 	url = http://github.com/viperinthought/fuzzyfinder_textmate
-[submodule "vim/bundle/L9"]
-	path = vim/bundle/L9
+[submodule "home/.vim/bundle/L9"]
+	path = home/.vim/bundle/L9
 	url = https://github.com/vim-scripts/L9.git
-[submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+[submodule "home/.vim/bundle/vim-markdown"]
+	path = home/.vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
