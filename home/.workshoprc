@@ -8,7 +8,6 @@ update_workshop() {
         cd $OLDWD;
 }
 
-update_workshop;
 
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 [ -f ~/.bash_prompt  ] && source ~/.bash_prompt
