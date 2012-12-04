@@ -12,3 +12,5 @@ update_ssh_agent() {
                 export SSH_AUTH_SOCK=$(tmux showenv | grep SSH_AUTH_SOCK | cut -d= -f2)
         fi
 }
+
+alias tmux_restore="tmux attach -t $USER || tmux new -s $USER"
