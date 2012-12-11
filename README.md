@@ -1,6 +1,6 @@
 # workshop.hs
 
-homeschick repo for my workshop configuration
+A [homeshick](https://github.com/andsens/homeshick) repo for my workshop configuration.
 
 ## Installation
 
