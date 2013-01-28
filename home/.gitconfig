@@ -12,4 +12,6 @@
 [alias]
 	co = checkout
 	ls = branch -l
-	sync = "!git stash; git pull; git stash pop"
+        sync = "!git stash; git pull; git stash pop"
+        assume = "update-index --assume-unchanged"
+        unassume = "update-index --no-assume-unchanged"
