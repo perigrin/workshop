@@ -9,3 +9,7 @@
 	threads = 0
 [push]
 	default = current
+[alias]
+	co = checkout
+	ls = branch -l
+	sync = "!git stash; git pull; git stash pop"
