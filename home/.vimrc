@@ -14,7 +14,7 @@ map <F2> :NERDTreeToggle<CR>
 syntax on
 set t_Co=256
 set background=dark
-colorscheme sunburst
+colorscheme elflord
 
 filetype plugin indent on
 
