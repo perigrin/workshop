@@ -5,6 +5,8 @@ set nocompatible
 set showcmd
 set expandtab
 set smarttab
+set sw=4 
+set ts=4
 
 " set up texmate bindings for NERDCommenter
 map <C-;> <Plug>NERDCommenterToggle
