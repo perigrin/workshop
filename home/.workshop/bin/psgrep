@@ -1,0 +1,2 @@
+#!/bin/sh 
+ps auxxx | grep -v $0 | grep -v 'grep' | grep $1

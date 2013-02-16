@@ -4,6 +4,8 @@ call pathogen#infect()
 set nocompatible
 set showcmd
 set smarttab
+set sw=4 
+set ts=4
 
 set smartindent
 set tabstop=4
@@ -18,7 +20,7 @@ map <F2> :NERDTreeToggle<CR>
 syntax on
 set t_Co=256
 set background=dark
-colorscheme sunburst
+colorscheme elflord
 
 filetype plugin indent on
 

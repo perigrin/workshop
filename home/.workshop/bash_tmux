@@ -13,4 +13,8 @@ update_ssh_agent() {
         fi
 }
 
+title() {
+        printf "\033k$1\033\\"
+}
+
 alias tmux_restore="tmux attach -t $USER || tmux new -s $USER"

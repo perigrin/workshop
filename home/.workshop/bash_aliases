@@ -1,0 +1,12 @@
+#alias grep='ack'
+alias cs='perl script/*server.pl -d'
+platform=`uname`
+if [[ $platform == 'Linux' ]]; then
+   alias ls='ls -GFA --color=auto'
+elif [[ $platform == 'Darwin' ]]; then
+   alias ls='ls -GFA'
+fi
+
+alias moose='perl -Moose -E'
+alias hs="$HOME/.homeshick"
+

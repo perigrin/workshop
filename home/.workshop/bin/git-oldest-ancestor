@@ -1,0 +1,4 @@
+#!/bin/bash 
+diff -u  <(git rev-list --first-parent "${1:-HEAD}")  \
+         <(git rev-list --first-parent "${2:-master}")    \
+| sed -ne 's/^ //p' | tail -1 
