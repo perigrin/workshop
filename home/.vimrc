@@ -3,8 +3,12 @@ call pathogen#infect()
 
 set nocompatible
 set showcmd
-set expandtab
 set smarttab
+
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " set up texmate bindings for NERDCommenter
 map <C-;> <Plug>NERDCommenterToggle
