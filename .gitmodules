@@ -21,7 +21,7 @@
 	url = https://github.com/vim-perl/vim-perl.git
 [submodule "home/.vim/bundle/Color-Sampler-Pack"]
 	path = home/.vim/bundle/Color-Sampler-Pack
-	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
+	url = https://github.com/vim-scripts/Colour-Sampler-Pack.git
 [submodule "home/.vim/bundle/ScrollColors"]
 	path = home/.vim/bundle/ScrollColors
 	url = https://github.com/vim-scripts/ScrollColors.git
