@@ -1,5 +1,7 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+syntax on
+filetype plugin indent on
 
 set nocompatible
 set showcmd
@@ -17,12 +19,10 @@ map <C-;> <Plug>NERDCommenterToggle
 
 map <F2> :NERDTreeToggle<CR>
 
-syntax on
 set t_Co=256
 set background=dark
 colorscheme elflord
 
-filetype plugin indent on
 
 set nofoldenable
 
@@ -47,3 +47,5 @@ let perl_include_pod=1
 let perl_string_as_statement=1
 let perl_sync_dist=1000
 
+au BufNewFile,BufRead *.tt setf tt2html
+au BufNewFile,BufRead *.tt2 setf tt2html
