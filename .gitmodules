@@ -18,7 +18,7 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "home/.vim/bundle/vim-perl"]
 	path = home/.vim/bundle/vim-perl
-	url = https://github.com/petdance/vim-perl.git
+	url = https://github.com/vim-perl/vim-perl.git
 [submodule "home/.vim/bundle/Color-Sampler-Pack"]
 	path = home/.vim/bundle/Color-Sampler-Pack
 	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
