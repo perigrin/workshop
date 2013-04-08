@@ -14,6 +14,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+filetype plugin indent on
+filetype plugin on
+
 " set up texmate bindings for NERDCommenter
 map <C-;> <Plug>NERDCommenterToggle
 
@@ -22,6 +25,7 @@ map <F2> :NERDTreeToggle<CR>
 set t_Co=256
 set background=dark
 color Sunburst
+" color tir_black
 
 
 set nofoldenable
