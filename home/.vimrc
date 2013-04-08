@@ -21,7 +21,7 @@ map <F2> :NERDTreeToggle<CR>
 
 set t_Co=256
 set background=dark
-colorscheme elflord
+color Sunburst
 
 
 set nofoldenable
