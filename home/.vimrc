@@ -24,8 +24,8 @@ map <F2> :NERDTreeToggle<CR>
 
 set t_Co=256
 set background=dark
-color Sunburst
-" color tir_black
+" color Sunburst
+color tir_black
 
 
 set nofoldenable
