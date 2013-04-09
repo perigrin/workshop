@@ -1,4 +1,5 @@
 set -o vi
+
 update_workshop() {
         OLDWD=$PWD
         cd $HOME/.homesick/repos/workshop;
@@ -7,6 +8,8 @@ update_workshop() {
         $HOME/.homeshick symlink workshop;
         cd $OLDWD;
 }
+
+update_workshop;
 
 source ~/.workshop/bash_aliases
 source ~/.workshop/bash_prompt

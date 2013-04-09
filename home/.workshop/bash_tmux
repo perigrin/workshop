@@ -1,11 +1,3 @@
-if [[ "$SSH_CLIENT" != "" ]]
-then 
-        if [[ "$TERM" != "screen-256color" ]]
-        then
-                tmux attach-session -t "$USER" || tmux new-session -s "$USER"
-        fi
-fi
-
 update_ssh_agent() {
         if [[ "$TMUX" ]]
         then 
@@ -18,3 +10,7 @@ title() {
 }
 
 alias tmux_restore="tmux attach -t $USER || tmux new -s $USER"
+
+# restore tmux unless we're already *in* tmux
+test -z "$TMUX" && tmux_restore
+
