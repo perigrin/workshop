@@ -1,5 +1,9 @@
 set -o vi
 
+source ~/.workshop/bash_ssh
+
+test -z "$TMUX" && export SSH_AUTH_SOCK=$(tmux showenv | grep SSH_AUTH_SOCK | cut -d= -f2)
+
 update_workshop() {
         OLDWD=$PWD
         cd $HOME/.homesick/repos/workshop;
@@ -11,9 +15,9 @@ update_workshop() {
 
 update_workshop;
 
+source ~/.workshop/bash_ssh
 source ~/.workshop/bash_aliases
 source ~/.workshop/bash_prompt
-source ~/.workshop/bash_ssh
 source ~/.workshop/bash_tmux
 
 export PATH="$HOME/.workshop/bin:$PATH"
