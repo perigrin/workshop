@@ -12,5 +12,5 @@ title() {
 alias tmux_restore="tmux attach -t $USER || tmux new -s $USER"
 
 # restore tmux unless we're already *in* tmux
-test -z "$TMUX" && tmux_restore
+test -z "$TMUX" && $(tmux attach -t $USER || tmux new -s $USER)
 
