@@ -1,5 +1,6 @@
 #alias grep='ack'
 alias cs='perl script/*server.pl -d'
+
 platform=`uname`
 if [[ $platform == 'Linux' ]]; then
    alias ls='ls -GFA --color=auto'
@@ -9,4 +10,4 @@ fi
 
 alias moose='perl -Moose -E'
 alias hs="$HOME/.homeshick"
-
+alias pp="prove -lwr t/ | fgrep 'Result:' | xargs -I % $HOME/.workshop/bin/prowl 'Done %'"
