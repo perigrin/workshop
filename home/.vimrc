@@ -12,9 +12,16 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set paste
 
 filetype plugin indent on
 filetype plugin on
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+ 
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
 
 " set up texmate bindings for NERDCommenter
 map <C-;> <Plug>NERDCommenterToggle
