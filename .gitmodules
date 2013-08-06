@@ -49,3 +49,6 @@
 [submodule "home/.vim/bundle/vimwiki"]
 	path = home/.vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "home/.vim/bundle/ack"]
+	path = home/.vim/bundle/ack
+	url = https://github.com/vim-scripts/ack.vim
