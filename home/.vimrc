@@ -28,6 +28,8 @@ map <C-;> <Plug>NERDCommenterToggle
 
 map <F2> :NERDTreeToggle<CR>
 
+map <F3> <Plug>SetTmuxVars
+
 set t_Co=256
 set background=dark
 " color Sunburst

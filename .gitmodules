@@ -52,3 +52,6 @@
 [submodule "home/.vim/bundle/ack"]
 	path = home/.vim/bundle/ack
 	url = https://github.com/vim-scripts/ack.vim
+[submodule "home/.vim/bundle/tslime"]
+	path = home/.vim/bundle/tslime
+	url = https://github.com/jgdavey/tslime.vim
