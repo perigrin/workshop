@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DATE=`date +"%Y-%m-%d"`;
+SNIPPETS=`cat "$HOME/vimwiki/diary/$DATE.wiki"`
+
+source $HOME/wonk/extlib/bin/localenv-bashrc
+echo $SNIPPETS | $HOME/.workshop/bin/prowl "snippets for $DATE"
