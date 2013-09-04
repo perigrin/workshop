@@ -18,5 +18,6 @@
     assume = "update-index --assume-unchanged"
     unassume = "update-index --no-assume-unchanged"
     assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+    report = "log --author=chris@prather.org --format='%Cgreen%ci%Creset %s%Creset' --no-merges --all --since='yesterday'"
 [github]
 	pr-token = 6a37e79a9a715cc39a1f5fa73bafac9be5b10409
