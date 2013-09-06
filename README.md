@@ -4,7 +4,7 @@ A [homeshick](https://github.com/andsens/homeshick) repo for my workshop configu
 
 ## Installation
 
-> curl -l https://github.com/perigrin/workshop.hs/blob/master/install.sh | bash # look ma new dev machine
+> curl -l https://raw.github.com/perigrin/workshop/master/install.sh | bash # new dev machine!
 
 ## Details
 
