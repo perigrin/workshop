@@ -9,8 +9,8 @@ title() {
         printf "\033k$1\033\\"
 }
 
-alias tmux_restore="tmux attach -d -t $USER || tmux new -s $USER"
+alias tmux_restore="tmux -2 attach -d -t $USER || tmux -2 new -s $USER"
 
 # restore tmux unless we're already *in* tmux
-test -z "$TMUX" && $(tmux attach -d -t $USER || tmux new -s $USER)
+test -z "$TMUX" && $(tmux -2 attach -d -t $USER || tmux -2 new -s $USER)
 
