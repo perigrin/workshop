@@ -10,7 +10,7 @@ cd $HOME
 git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
 $HOME/.homesick/repos/homeshick/home/.homeshick link
 
-$HOME/.homeshick clone perigrin/workshop.git
+$HOME/.homeshick clone https://github.com/perigrin/workshop.git
 cd $HOME/.homesick/repos/workshop
 git submodule init
 git submodule update
