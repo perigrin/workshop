@@ -3,12 +3,8 @@ set -o vi
 source ~/.workshop/bash_ssh
 
 update_workshop() {
-        OLDWD=$PWD
-        cd $HOME/.homesick/repos/workshop;
-        git pull;
-        cd $HOME; 
-        $HOME/.homeshick symlink workshop;
-        cd $OLDWD;
+        ~/.homeshick pull
+        ~/.homeshick -q link
 }
 
 update_workshop;

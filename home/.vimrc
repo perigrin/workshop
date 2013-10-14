@@ -32,8 +32,8 @@ map <F3> <Plug>SetTmuxVars
 
 set t_Co=256
 set background=dark
-" color Sunburst
-color tir_black
+ color sunburst
+" color tir_black
 
 
 set nofoldenable

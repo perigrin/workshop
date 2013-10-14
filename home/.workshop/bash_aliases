@@ -18,3 +18,6 @@ function ci {
     echo "requires q[$1];" >> cpanfile;
     carton install;
 }
+
+alias cpanm='curl -skL http://cpanmin.us | perl -'
+alias vi=vim
