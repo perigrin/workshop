@@ -1,14 +1,16 @@
 set -o vi
 
 source ~/.workshop/bash_ssh
+source ~/.homesick/repos/homeshick/homeshick.sh
 
 update_workshop() {
-        ~/.homeshick pull
-        ~/.homeshick -q link
+        homeshick pull
+        homeshick -q link
 }
 
 update_workshop;
 
+source ~/.homesick/repos/homeshick/homeshick.sh
 source ~/.workshop/bash_ssh
 source ~/.workshop/bash_aliases
 source ~/.workshop/bash_prompt

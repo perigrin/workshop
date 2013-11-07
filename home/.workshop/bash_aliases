@@ -9,7 +9,6 @@ elif [[ $platform == 'Darwin' ]]; then
 fi
 
 alias moose='perl -Moose -E'
-alias hs="$HOME/.homeshick"
 alias pp="prove -lwr t/ | fgrep 'Result:' | xargs -I % $HOME/.workshop/bin/prowl 'Done %'"
 
 # handy aliases for carton
