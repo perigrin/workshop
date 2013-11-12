@@ -1,8 +1,20 @@
-filetype off
 set nocompatible
+filetype off
 
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'vim-perl/vim-perl'
+Bundle 'vim-scripts/Colour-Sampler-Pack'
+Bundle 'c9s/moose-syntax.vim'
+Bundle 'tpope/vim-markdown'
+Bundle 'vimwiki/vimwiki'
+Bundle 'jgdavey/tslime.vim'
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on
 syntax on
@@ -12,13 +24,13 @@ set nofoldenable
 set paste
 set showcmd
 set smartindent
-set smarttab
+"set smarttab
 set sw=4 
 set ts=4
 
 set t_Co=256
 set background=dark
-color sunburst
+color solarized
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
