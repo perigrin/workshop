@@ -4,9 +4,6 @@
 [submodule "home/.vim/bundle/YankRing.vim"]
 	path = home/.vim/bundle/YankRing.vim
 	url = https://github.com/vim-scripts/YankRing.vim.git
-[submodule "home/.vim/bundle/supertab"]
-	path = home/.vim/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "home/.vim/bundle/nerdcommenter"]
 	path = home/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
