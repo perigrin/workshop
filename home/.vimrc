@@ -1,21 +1,24 @@
+filetype off
+set nocompatible
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
-syntax on
+
 filetype plugin indent on
-set nocompatible
+syntax on
+
+set expandtab
+set nofoldenable
+set paste
 set showcmd
+set smartindent
 set smarttab
 set sw=4 
 set ts=4
 
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set paste
-
-filetype plugin indent on
-filetype plugin on
+set t_Co=256
+set background=dark
+color sunburst
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
@@ -24,19 +27,9 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 " set up texmate bindings for NERDCommenter
-map <C-;> <Plug>NERDCommenterToggle
-
+map <C-l> <Plug>NERDCommenterToggle
 map <F2> :NERDTreeToggle<CR>
-
 map <F3> <Plug>SetTmuxVars
-
-set t_Co=256
-set background=dark
- color sunburst
-" color tir_black
-
-
-set nofoldenable
 
 "define :Tidy command to run perltidy on visual selection || entire buffer"
 command -range=% -nargs=* Tidy <line1>,<line2>!perltidy
