@@ -7,10 +7,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'c9s/moose-syntax.vim'
+Bundle 'dmitry-ilyashevich/vim-typescript'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'dmitry-ilyashevich/vim-typescript'
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
