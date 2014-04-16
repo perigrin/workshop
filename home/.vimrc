@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'c9s/moose-syntax.vim'
+Bundle 'davidbeckingsale/writegood.vim'
 Bundle 'dmitry-ilyashevich/vim-typescript'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'jnwhiteh/vim-golang'
@@ -61,7 +62,8 @@ xnoremap > >gv
 
 set t_Co=256
 set background=dark
-color solarized
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " enable persistent undo
 if has("persistent_undo")
