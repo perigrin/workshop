@@ -7,8 +7,7 @@ use constant API_KEY => 'e9ebc570a43db96e306270ea23ca95a440cee272';
 my $ws = WebService::Prowl->new( apikey => API_KEY );
 $ws->verify || die $ws->error();
 
-my $description = join ' ', @ARGV, "\n";
-$description .= do {local $/; <STDIN> };
+my $description = join ' ', @ARGV, "\n" ||  do {local $/; <STDIN> };
 
 $ws->add(
     application => "prowl script",

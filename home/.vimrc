@@ -108,3 +108,7 @@ let perl_sync_dist=1000
 
 au BufNewFile,BufRead *.tt setf tt2html
 au BufNewFile,BufRead *.tt2 setf tt2html
+
+" stolen from hoelzro's autocommands file
+autocmd VimResized * exe "normal! \<c-w>="
+

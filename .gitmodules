@@ -2,3 +2,6 @@
 [submodule "home/.vim/bundle/vundle"]
 	path = home/.vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "home/.workshop/git-hub"]
+	path = home/.workshop/git-hub
+	url = git://github.com/ingydotnet/git-hub.git

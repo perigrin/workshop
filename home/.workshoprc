@@ -17,3 +17,10 @@ source ~/.workshop/bash_prompt
 source ~/.workshop/bash_tmux
 
 export PATH="$HOME/.workshop/bin:$PATH"
+
+if [ -e "$HOME/.workshop/git-hub" ];
+then
+    export PATH=$HOME/.workshop/git-hub/lib:"$PATH"
+    export MANPATH=$HOME/.workship/git-hub/man:"$MANPATH"
+fi
+
