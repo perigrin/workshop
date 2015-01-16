@@ -9,12 +9,8 @@ Bundle 'gmarik/vundle'
 Bundle 'c9s/moose-syntax.vim'
 Bundle 'davidbeckingsale/writegood.vim'
 Bundle 'dmitry-ilyashevich/vim-typescript'
-Bundle 'jgdavey/tslime.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
@@ -80,27 +76,6 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-" set up texmate bindings for NERDCommenter
-map <C-l> <Plug>NERDCommenterToggle
-map <F2> :NERDTreeToggle<CR>
-map <F3> <Plug>SetTmuxVars
-
-"define :Tidy command to run perltidy on visual selection || entire buffer"
-command -range=% -nargs=* Tidy <line1>,<line2>!perltidy
-
-"run :Tidy on entire buffer and return cursor to (approximate) original position"
-fun DoTidy()
-    let Pos = line2byte( line( "." ) ) 
-    :Tidy
-    exe "goto " . Pos 
-endfun
-
-"shortcut for normal mode to run on entire buffer then return to current line"
-"au Filetype perl nmap <C-H> :call DoTidy()<CR>
-
-"shortcut for visual mode to run on the the current visual selection"
-"au Filetype perl vmap <C-H> :Tidy<CR>
-
 let perl_extended_vars=1
 let perl_include_pod=1
 let perl_string_as_statement=1
@@ -111,4 +86,7 @@ au BufNewFile,BufRead *.tt2 setf tt2html
 
 " stolen from hoelzro's autocommands file
 autocmd VimResized * exe "normal! \<c-w>="
+
+" Remove any trailing whitespace that is in the file
+autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
