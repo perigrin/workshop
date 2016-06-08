@@ -19,6 +19,7 @@ Bundle 'vim-scripts/Colour-Sampler-Pack'
 Bundle 'vimwiki/vimwiki'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
+Bundle 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on
 syntax on
@@ -44,7 +45,7 @@ set showmode
 set showcmd
 set display+=lastline,uhex
 
-set sw=4 
+set sw=4
 set ts=4
 set sts=4
 set smarttab
@@ -72,7 +73,7 @@ set noswapfile
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
- 
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
