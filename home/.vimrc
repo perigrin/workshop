@@ -17,6 +17,7 @@ Bundle 'xolox/vim-misc'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'junegunn/goyo.vim'
+Bundle 'junegunn/limelight.vim'
 Bundle 'whatyouhide/vim-gotham'
 
 filetype plugin indent on
@@ -91,3 +92,23 @@ let g:gist_post_private = 1
 " And we do a lot of multi-file gists
 let g:gist_get_multiplefile = 1
 
+let g:limelight_conceal_ctermfg = 240
+
+function! s:goyo_enter()
+    if exists('$TMUX')
+        silent !tmux set status off
+    endif
+    Limelight
+endfunction
+
+function! s:goyo_leave()
+    if exists('$TMUX')
+        silent !tmux set status on
+    endif
+    Limelight!
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+nmap <leader>g :Goyo<CR>
