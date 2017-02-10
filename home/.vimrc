@@ -6,7 +6,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'c9s/moose-syntax.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'davidbeckingsale/writegood.vim'
@@ -17,6 +16,8 @@ Bundle 'vim-perl/vim-perl'
 Bundle 'xolox/vim-misc'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
+Bundle 'junegunn/goyo.vim'
+Bundle 'whatyouhide/vim-gotham'
 
 filetype plugin indent on
 syntax on
@@ -54,10 +55,7 @@ set smartindent
 xnoremap < <gv
 xnoremap > >gv
 
-set t_Co=256
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+color gotham256
 
 " enable persistent undo
 if has("persistent_undo")
@@ -87,4 +85,9 @@ autocmd VimResized * exe "normal! \<c-w>="
 
 " Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
+" Private gists by default
+let g:gist_post_private = 1
+" And we do a lot of multi-file gists
+let g:gist_get_multiplefile = 1
 
