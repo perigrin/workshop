@@ -20,3 +20,5 @@
     assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
     report = "log --author=chris@prather.org --format='%Cgreen%ci%Creset %s%Creset' --no-merges --all --since='yesterday'"
 
+[github]
+	user = perigrin
