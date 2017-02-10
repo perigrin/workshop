@@ -5,7 +5,6 @@ source ~/.homesick/repos/homeshick/homeshick.sh
 
 update_workshop() {
         homeshick pull
-#        homeshick -q link
 }
 
 update_workshop;
