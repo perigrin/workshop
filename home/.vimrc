@@ -6,20 +6,17 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'c9s/moose-syntax.vim'
+Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'davidbeckingsale/writegood.vim'
-Bundle 'dmitry-ilyashevich/vim-typescript'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'vim-perl/vim-perl'
-Bundle 'vim-scripts/Colour-Sampler-Pack'
-Bundle 'vimwiki/vimwiki'
-Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-misc'
-Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
 
 filetype plugin indent on
 syntax on
