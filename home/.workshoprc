@@ -24,3 +24,5 @@ then
     export MANPATH=$HOME/.workship/git-hub/man:"$MANPATH"
 fi
 
+set -o vi
+export EDITOR=`which vim`
