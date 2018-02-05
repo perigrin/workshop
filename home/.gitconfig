@@ -22,3 +22,7 @@
 
 [github]
 	user = perigrin
+[protocol "keybase"]
+	allow = always
+	allow = always
+	allow = always
