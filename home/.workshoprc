@@ -13,7 +13,7 @@ source ~/.homesick/repos/homeshick/homeshick.sh
 source ~/.workshop/bash_ssh
 source ~/.workshop/bash_aliases
 source ~/.workshop/bash_prompt
-source ~/.workshop/bash_tmux
+#source ~/.workshop/bash_tmux
 
 export PATH="$HOME/.workshop/bin:$PATH"
 
