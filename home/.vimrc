@@ -1,10 +1,10 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 Bundle 'c9s/moose-syntax.vim'
 Bundle 'christoomey/vim-tmux-navigator'
@@ -21,6 +21,16 @@ Bundle 'tpope/vim-markdown'
 Bundle 'vim-perl/vim-perl'
 Bundle 'whatyouhide/vim-gotham'
 Bundle 'xolox/vim-misc'
+Bundle 'vimwiki/vimwiki'
+Bundle 'junegunn/fzf'
+Bundle 'junegunn/fzf.vim'
+Bundle 'michal-h21/vim-zettel'
+
+call vundle#end()
+
+if executable('ag')
+    let g:ackprg = 'ag'
+endif
 
 filetype plugin indent on
 syntax on
@@ -79,6 +89,7 @@ let perl_extended_vars=1
 let perl_include_pod=1
 let perl_string_as_statement=1
 let perl_sync_dist=1000
+let perl_sub_signatures = 1
 
 au BufNewFile,BufRead *.tt setf tt2html
 au BufNewFile,BufRead *.tt2 setf tt2html
@@ -117,4 +128,24 @@ nmap <leader>g :Goyo<CR>
 
 " format with goimports instead of gofmt
 " let g:go_fmt_command = "goimports"
+
+" vimwiki/vimwiki
+let g:vimwiki_list = [
+    \{'path': '~/dev/commonplacebook', 'syntax': 'markdown', 'ext': '.md'},
+\]
+
+augroup commonplacebook
+au! BufReadPre  ~/dev/commonplacebook/* silent! !git pull > /dev/null
+au! BufWritePost ~/dev/commonplacebook/* silent! !git add .;git commit -m "Auto commit of %:t." "%" > /dev/null; git push &> /dev/null&
+augroup END
+
+" Filename format. The filename is created using strftime() function
+let g:zettel_format = "%Y%m%d-%H%M"
+" command used for VimwikiSearch
+" default value is "ag". To use other command, like ripgrep, pass the
+" command line and options:
+" let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
+
+" Set template and custom header variable for the second Wiki
+let g:zettel_options = [{"template" :  "~/dev/commonplacebook/.zettle/note.tmpl"}]
 
