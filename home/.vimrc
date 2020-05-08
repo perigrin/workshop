@@ -134,10 +134,10 @@ let g:vimwiki_list = [
     \{'path': '~/dev/commonplacebook', 'syntax': 'markdown', 'ext': '.md'},
 \]
 
-augroup commonplacebook
-au! BufReadPre  ~/dev/commonplacebook/* silent! !git pull > /dev/null
-au! BufWritePost ~/dev/commonplacebook/* silent! !git add .;git commit -m "Auto commit of %:t." "%" > /dev/null; git push &> /dev/null&
-augroup END
+"augroup commonplacebook
+"au! BufReadPre  ~/dev/commonplacebook/* silent! !git pull > /dev/null
+"au! BufWritePost ~/dev/commonplacebook/* silent! !git add .;git commit -m "Auto commit of %:t." "%" > /dev/null; git push &> /dev/null&
+"augroup END
 
 " Filename format. The filename is created using strftime() function
 let g:zettel_format = "%Y%m%d-%H%M"
