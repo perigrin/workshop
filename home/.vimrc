@@ -22,9 +22,9 @@ Bundle 'vim-perl/vim-perl'
 Bundle 'whatyouhide/vim-gotham'
 Bundle 'xolox/vim-misc'
 Bundle 'vimwiki/vimwiki'
-Bundle 'junegunn/fzf'
 Bundle 'junegunn/fzf.vim'
 Bundle 'michal-h21/vim-zettel'
+Bundle 'rust-lang/rust.vim'
 
 call vundle#end()
 
@@ -127,7 +127,7 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nmap <leader>g :Goyo<CR>
 
 " format with goimports instead of gofmt
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "gofumports"
 
 " vimwiki/vimwiki
 let g:vimwiki_list = [
@@ -149,3 +149,4 @@ let g:zettel_format = "%Y%m%d-%H%M"
 " Set template and custom header variable for the second Wiki
 let g:zettel_options = [{"template" :  "~/dev/commonplacebook/.zettle/note.tmpl"}]
 
+let g:rustfmt_autosave = 1
