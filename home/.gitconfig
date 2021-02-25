@@ -13,8 +13,6 @@
 	co = checkout
 	ls = branch -l
     sync = "!git stash; git pull; git stash pop"
-    push = "!update_ssh_agent; git-push"
-    pull = "!update_ssh_agent; git-pull"
     assume = "update-index --assume-unchanged"
     unassume = "update-index --no-assume-unchanged"
     assumed  = "!git ls-files -v | grep ^h | cut -c 3-"

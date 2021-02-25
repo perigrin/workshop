@@ -127,7 +127,12 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 nmap <leader>g :Goyo<CR>
 
 " format with goimports instead of gofmt
-let g:go_fmt_command = "gofumports"
+let g:go_def_mode="gopls"
+let g:go_info_mode="gopls"
+let g:go_fmt_command="gopls"
+let g:go_imports_autosave=1
+let g:go_imports_mode=1
+let g:go_gopls_gofumpt=1
 
 " vimwiki/vimwiki
 let g:vimwiki_list = [
