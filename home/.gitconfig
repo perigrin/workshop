@@ -21,9 +21,9 @@
 	user = perigrin
 [protocol "keybase"]
 	allow = always
-[ghi]
-	token = 5eb264fa637fbbe67be24d04c0959c91a923d5cb
 [pull]
 	rebase = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[init]
+	defaultBranch = pu
