@@ -69,6 +69,9 @@ xnoremap < <gv
 xnoremap > >gv
 
 color gotham256
+hi Normal guibg=NONE
+hi NonText guibg=NONE
+set termguicolors
 
 " enable persistent undo
 if has("persistent_undo")
