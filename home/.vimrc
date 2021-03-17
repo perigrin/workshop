@@ -68,6 +68,7 @@ set smartindent
 xnoremap < <gv
 xnoremap > >gv
 
+" not sure exactly why but the order is important here
 color gotham256
 hi Normal guibg=NONE
 hi NonText guibg=NONE
